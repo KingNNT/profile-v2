@@ -88,12 +88,16 @@
 								class="dropdown-menu"
 								aria-labelledby="dropdownId"
 							>
-								<a class="dropdown-item" href="#">Dự Án 1</a>
-								<a class="dropdown-item" href="#">Dự Án 2</a>
+								<a class="dropdown-item" href="#project__1"
+									>Dự Án 1</a
+								>
+								<a class="dropdown-item" href="#project__2"
+									>Dự Án 2</a
+								>
 							</div>
 						</li>
 						<li class="nav-item mx-2">
-							<a class="nav-link" href="#">Liên Hệ</a>
+							<a class="nav-link" href="#contact">Liên Hệ</a>
 						</li>
 					</ul>
 				</div>
@@ -694,7 +698,8 @@
 						<div class="my-4">
 							<h1 class="text-center my-4">Dự Án Đã Tham Gia</h1>
 							<div class="container border shadow-lg rounded p-4">
-								<div>
+								<!-- Start Project 1 -->
+								<div id="project__1" class="my-2">
 									<h2 class="text-center text-primary">
 										Website Quản Lý Nhân Sự
 									</h2>
@@ -794,10 +799,114 @@
 										</h5>
 									</div>
 								</div>
+								<!-- End Project 1 -->
+								<!-- Start Project 2 -->
+								<div id="project__2" class="my-2">
+									<h2 class="text-center text-primary">
+										Website Quản Lý Nhân Sự
+									</h2>
+									<img
+										class="w-100"
+										src="./assets/images/projects/HR-Managemet.png"
+									/>
+									<div class="my-4">
+										<h5>
+											<span class="font-weight-bold"
+												>Tiêu Đề:
+											</span>
+											<span class="text-muted"
+												>Xây Dựng Website Quản Lý Công
+												Việc Của Nhân Viên</span
+											>
+										</h5>
+										<h5>
+											<span class="font-weight-bold"
+												>Ngôn Ngữ và Công Nghê Sử Dụng:
+											</span>
+											<span class="text-muted"
+												>HTML, CSS, SCSS, JQUERY/AJAX,
+												Bootstrap 4, MySQL, PHP
+												thuần</span
+											>
+										</h5>
+										<h5>
+											<span class="font-weight-bold"
+												>Link Github:
+											</span>
+											<span class="text-muted">
+												<a
+													class=""
+													href="https://github.com/KingNNT/Employee-Management"
+												>
+													Truy Cập
+													<i
+														class="fa fa-sign-in"
+														aria-hidden="true"
+													></i>
+												</a>
+											</span>
+										</h5>
+										<h5>
+											<div class="font-weight-bold">
+												Mô tả:
+											</div>
+											<div class="py-2">
+												<ul>
+													<span class="text-danger"
+														>Front-End</span
+													>
+													<li class="my-2">
+														<h6>
+															Hiển thị danh sách
+															các nhân viên
+														</h6>
+													</li>
+													<li class="my-2">
+														<h6>
+															Hiển thị tương ứng
+															công việc của nhân
+															viên khi click vào
+															nhân viên đó
+														</h6>
+													</li>
+													<li class="my-2">
+														<h6>
+															Sử dụng AJAX để lấy
+															dữ liệu của công
+															việc tương ứng với
+															nhân viên
+														</h6>
+													</li>
+													<li class="my-2">
+														<h6>
+															Sử dụng Plugin
+															DataTables của
+															JQuery để tạo bảng,
+															phân trang, và tìm
+															kiếm
+														</h6>
+													</li>
+												</ul>
+												<ul>
+													<span class="text-danger"
+														>Back-End</span
+													>
+													<li class="my-2">
+														<h6>
+															Code Thuần bằng PHP
+														</h6>
+													</li>
+												</ul>
+											</div>
+										</h5>
+									</div>
+								</div>
+								<!-- End Project 2 -->
 							</div>
 						</div>
 						<!-- End Project -->
 						<!-- Start Contact -->
+						<div class="my-4" id="contact"></div>
 						<!-- End Contact -->
 					</div>
 					<!-- End Text Informations -->
