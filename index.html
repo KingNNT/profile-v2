@@ -6,6 +6,14 @@
 		<title>Profile of KingNNT</title>
 
 		<link rel="icon" type="image/png" href="./assets/images/Logo.png" />
+
+		<!-- Font -->
+		<link
+			href="./assets/fonts/OpenSans.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+
 		<!--    My CSS - JS    -->
 		<link
 			rel="stylesheet"
@@ -37,11 +45,11 @@
 			src="./assets/dist/libs/bootstrap/js/bootstrap.min.js"
 		></script>
 
-		<script type="text/javascript" src=""></script>
+		<script type="text/javascript" src="./assets/dist/app.min.js"></script>
 	</head>
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">
 					<img class="col-1 logo" src="./assets/images/Logo.png" />
 				</a>
@@ -90,13 +98,157 @@
 				</div>
 			</nav>
 		</header>
-		<main>
+		<main class="bg-light">
 			<section>
-				<div>
+				<div class="position-relative">
 					<img
 						class="w-100 background__header"
 						src="./assets/images/bg.jpg"
 					/>
+					<div
+						id="box__information"
+						class="container my-4 p-4 border shadow-lg rounded position-absolute"
+						style="top: 10vh; left: 21vw"
+					>
+						<div class="row my-1">
+							<div class="col-md-4 col-12">
+								<img
+									class="w-100 rounded"
+									src="./assets/images/avatar.jpg"
+								/>
+							</div>
+							<div class="col-md-8 col-12">
+								<div
+									class="bg-pink col-2 p-1 d-flex justify-content-center align-items-center"
+								>
+									<h6 class="text-center text-light m-0">
+										XIN CHÀO
+									</h6>
+								</div>
+
+								<div class="my-3">
+									<h3>
+										Tôi là:
+										<span class="font-weight-bold"
+											>Ninh Ngọc Tuấn</span
+										>
+									</h3>
+									<h5>Web Developer</h5>
+								</div>
+								<hr />
+								<div class="my-3 col-md-10 col-12">
+									<h5 class="d-flex justify-content-between">
+										<span class="font-weight-bold">
+											Ngày Sinh:
+										</span>
+										<span
+											class="text-muted font-italic small"
+											>06-06-2000</span
+										>
+									</h5>
+									<h5 class="d-flex justify-content-between">
+										<span class="font-weight-bold">
+											Địa Chỉ:
+										</span>
+										<span
+											class="text-muted font-italic small"
+											>Bắc Từ Liêm, Hà Nội</span
+										>
+									</h5>
+									<h5 class="d-flex justify-content-between">
+										<span class="font-weight-bold">
+											Quê Quán:
+										</span>
+										<span
+											class="text-muted font-italic small"
+											>Ý Yên, Nam Định</span
+										>
+									</h5>
+									<h5 class="d-flex justify-content-between">
+										<span class="font-weight-bold">
+											Email:
+										</span>
+										<span
+											class="text-muted font-italic small"
+											>Dev.KingNNT@gmail.com</span
+										>
+									</h5>
+									<h5 class="d-flex justify-content-between">
+										<span class="font-weight-bold">
+											Số Điện Thoại:
+										</span>
+										<span
+											class="text-muted font-italic small"
+											>+84946499390</span
+										>
+									</h5>
+								</div>
+							</div>
+						</div>
+						<div class="row my-1">
+							<div class="col-12">
+								<div
+									class="bg-pink p-1 rounded shadow-sm d-flex justify-content-around"
+								>
+									<a
+										href="mailto:Dev.KingNNT@gmail.com"
+										class="text-dark"
+									>
+										<i
+											class="fa fa-envelope"
+											aria-hidden="true"
+										></i>
+									</a>
+									<a
+										href="https://www.facebook.com/100020638455388"
+										class="text-dark"
+									>
+										<i
+											class="fa fa-facebook"
+											aria-hidden="true"
+										></i>
+									</a>
+									<a
+										href="https://www.linkedin.com/in/kingnnt/"
+										class="text-dark"
+									>
+										<i
+											class="fa fa-linkedin"
+											aria-hidden="true"
+										></i>
+									</a>
+									<a
+										href="https://twitter.com/King_NNT"
+										class="text-dark"
+									>
+										<i
+											class="fa fa-twitter"
+											aria-hidden="true"
+										></i>
+									</a>
+
+									<a
+										href="https://github.com/KingNNT/"
+										class="text-dark"
+									>
+										<i
+											class="fa fa-github"
+											aria-hidden="true"
+										></i>
+									</a>
+									<a
+										href="https://join.skype.com/invite/eqRpzcC8cGsf"
+										class="text-dark"
+									>
+										<i
+											class="fa fa-skype"
+											aria-hidden="true"
+										></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section></section>

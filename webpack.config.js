@@ -11,7 +11,7 @@ const devMode = false;
 
 module.exports = {
 	mode: devMode ? "development" : "production",
-	entry: ["./src/scss/site.scss"],
+	entry: ["./src/js/main.js", "./src/scss/site.scss"],
 
 	output: {
 		filename: "app.min.js",

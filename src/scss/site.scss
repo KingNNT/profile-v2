@@ -1,5 +1,23 @@
+$bg-color__main: #000000;
+$bg-color__main__hover: #707070;
+$bg-color__secondary: #000000b7;
+
+$text-color__main: #e0e0e0;
 .bg-dark {
-	color: #000000 !important;
+	background-color: $bg-color__main !important;
+}
+
+.bg-dark__secondary {
+	background-color: $bg-color__secondary !important;
+	transition: all 0.2s;
+}
+
+.bg-pink {
+	background-color: #e64b58;
+}
+
+body {
+	font-family: "Open Sans";
 }
 
 header {
@@ -7,17 +25,36 @@ header {
 		.logo {
 			border-radius: 50%;
 		}
+		.nav-item {
+			.dropdown-menu {
+				background-color: $bg-color__main !important;
+				.dropdown-item {
+					color: $text-color__main !important;
+					background-color: $bg-color__main !important;
+					&:hover {
+						background-color: $bg-color__main__hover !important;
+					}
+				}
+			}
+		}
 	}
 }
 
 main {
 	min-height: 90vh;
 	.background__header {
-		height: 20%;
+		height: 40vh;
 		object-fit: cover;
+	}
+	#box__information {
+		background: linear-gradient(
+			60deg,
+			#a1a1a1 0%,
+			#add1d6 51%,
+			#bae5f5 85%
+		);
 	}
 }
 
 footer {
-	
 }
