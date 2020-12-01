@@ -48,6 +48,7 @@
 		<script type="text/javascript" src="./assets/dist/app.min.js"></script>
 	</head>
 	<body>
+		<!-- Start Header -->
 		<header class="sticky-top">
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">
@@ -98,17 +99,23 @@
 				</div>
 			</nav>
 		</header>
+		<!-- End Header -->
+		<!-- Start Main -->
 		<main class="bg-light">
-			<section>
-				<div class="position-relative">
-					<img
-						class="w-100 background__header"
-						src="./assets/images/bg.jpg"
-					/>
+			<section class="position-relative">
+				<!-- Start Top Image Background -->
+				<img
+					class="w-100 background__header position-absolute"
+					style="z-index: 0"
+					src="./assets/images/bg.jpg"
+				/>
+				<!-- End Top Image Background -->
+				<!-- Start Main Content -->
+				<div class="position-absolute" style="z-index: 1">
+					<!-- Start Box Informations -->
 					<div
 						id="box__information"
-						class="container p-4 border shadow-lg rounded position-absolute"
-						style="top: 10vh; left: 0; right: 0"
+						class="container p-4 border shadow-lg rounded"
 					>
 						<div class="row my-1">
 							<div class="col-md-4 col-12">
@@ -117,7 +124,7 @@
 									src="./assets/images/avatar.jpg"
 								/>
 							</div>
-							<div class="col-md-8 col-12">
+							<div iv class="col-md-8 col-12">
 								<div
 									class="bg-pink col-md-2 col-6 mt-1 p-1 d-flex justify-content-center align-items-center"
 								>
@@ -128,7 +135,7 @@
 
 								<div class="my-3">
 									<h3>
-										Tôi là:
+										Mình là:
 										<span class="font-weight-bold"
 											>Ninh Ngọc Tuấn</span
 										>
@@ -249,12 +256,449 @@
 							</div>
 						</div>
 					</div>
+					<!-- End Box Informations -->
+					<!-- Start Text Infomation -->
+					<div class="container-fluid w-75 my-4">
+						<!-- Start Introduction -->
+						<div class="my-4">
+							<h1 class="text-center my-4">Đôi Nét Giới Thiệu</h1>
+							<p class="text-justify h5 my-4">
+								Chào mọi người. Mình là
+								<span class="font-weight-bold"
+									>Ninh Ngọc Tuấn</span
+								>, trên mạng xã hội hoặc ở một số diễn đàn thì
+								mọi người thường gọi mình với biệt danh là
+								<span class="text-muted">"KingNNT"</span>.
+							</p>
+							<div class="text-justify h5 my-4">
+								<ul class="h5">
+									<h4 class="text-primary">Về Học Tập:</h4>
+									<li>
+										<h5 class="text-secondary">
+											Khi còn là học sinh:
+										</h5>
+										<div>
+											<p class="h6">
+												Là thành viên trong đội tuyển ôn
+												thi cấp Huyện / Tỉnh trong 8 năm
+												về môn Toán
+											</p>
+											<p class="h6">
+												Đến năm lớp 11 là thành viên đội
+												tuyển Olympic Tin Học cho học
+												sinh dự thi cấp Tỉnh
+											</p>
+										</div>
+									</li>
+									<li>
+										<h5 class="text-secondary">
+											Khi là sinh viên Đại Học:
+										</h5>
+										<div>
+											<p class="h6">
+												Hiện tại là sinh viên chuyên
+												ngành Công Nghê Phần Mềm khoa
+												Công Nghệ Thông Tin. Và cũng là
+												thành viên đội tuyển Olympic Tin
+												Học của trường dự thi các cuộc
+												thi Olympic Tin Học Việt Nam và
+												ACM/ICPC quy mô khu vực.
+											</p>
+											<p class="h6">
+												Cùng với đó Là Admin tại
+												<a
+													class="text-danger text-decoration-none"
+													href="https://nguyenvanhieu.vn/"
+													>Lập Trình Không Khó</a
+												>
+												- Nơi chia sẻ các khóa học lập
+												trình miễn phí, hướng dẫn làm
+												bài tập lớn, đồ án môn học, đồ
+												án chuyên ngành, đồ án tốt
+												nghiệp, ...
+											</p>
+											<p class="h6">
+												Và cũng là Admin tại
+												<a
+													class="text-danger text-decoration-none"
+													href="https://luyencode.net/"
+													>luyencode.net</a
+												>
+												- Một trang web giúp mọi người
+												có thể tham gia giải các bài
+												toán tin học, qua đó rèn luyện
+												khả năng tư duy giải thuật
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<p class="text-justify h5 my-4">
+								Với niềm đam mê công nghê từ nhỏ, mình có một
+								ước mơ trở thành một Web Developer Fullstack. Và
+								hiện tại, ngày mỗi ngày mình đều liên tục học
+								hỏi để biến ước mở thành hiện thực sớm nhất có
+								thể
+							</p>
+						</div>
+						<!-- End Introduction -->
+						<hr class="my-4" />
+						<!-- Start Career Goals -->
+						<div class="my-4">
+							<h1 class="text-center my-4">
+								Mục Tiêu Nghề Nghiệp
+							</h1>
+							<p class="text-center h5">
+								Hiện tại thì mình vẫn đang từng ngày tự trau dồi
+								kiến thức và kỹ năng chuyên môn nên chắc chắn
+								rồi mục tiêu của mình sẽ là một Web Developer
+								Fullstack. Và sau đó có thể phát triển sang
+								nhiều lĩnh vực khác như Mobile, Game hay AI, ...
+							</p>
+						</div>
+						<!-- End Career Goals -->
+						<!-- Start Work Experience -->
+						<div class="my-4">
+							<div class="row">
+								<div class="col-md-6 offset-md-3">
+									<h1 class="text-center my-4">
+										Kinh Nghiệm Làm Việc
+									</h1>
+									<ul class="timeline">
+										<li>
+											<a
+												target="_blank"
+												href="https://www.totoprayogo.com/#"
+											>
+												New Web Design
+											</a>
+											<a href="#" class="float-right"
+												>21 March, 2014</a
+											>
+											<p>
+												Lorem ipsum dolor sit amet,
+												consectetur adipiscing elit.
+												Quisque scelerisque diam non
+												nisi semper, et elementum lorem
+												ornare. Maecenas placerat
+												facilisis mollis. Duis sagittis
+												ligula in sodales vehicula....
+											</p>
+										</li>
+										<li>
+											<a href="#">21 000 Job Seekers</a>
+											<a href="#" class="float-right"
+												>4 March, 2014</a
+											>
+											<p>
+												Curabitur purus sem, malesuada
+												eu luctus eget, suscipit sed
+												turpis. Nam pellentesque felis
+												vitae justo accumsan, sed semper
+												nisi sollicitudin...
+											</p>
+										</li>
+										<li>
+											<a href="#">Awesome Employers</a>
+											<a href="#" class="float-right"
+												>1 April, 2014</a
+											>
+											<p>
+												Fusce ullamcorper ligula sit
+												amet quam accumsan aliquet. Sed
+												nulla odio, tincidunt vitae nunc
+												vitae, mollis pharetra velit.
+												Sed nec tempor nibh...
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Work Experience -->
+						<!-- Start Specialized Skills -->
+						<div class="my-4">
+							<h1 class="text-center my-4">Kỹ Năng</h1>
+							<div class="container p-3 border shadow-lg rounded">
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>C/C++ Language</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 50%"
+												aria-valuenow="50"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>C# Language</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 45%"
+												aria-valuenow="45"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>PHP</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 60%"
+												aria-valuenow="60"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>Laravel (7.x & 8.x)</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 50%"
+												aria-valuenow="50"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>HTML5 / CSS3</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 55%"
+												aria-valuenow="55"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>SASS/SCSS</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 55%"
+												aria-valuenow="55"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>Bootstrap</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 65%"
+												aria-valuenow="65"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>Tailwind CSS</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 20%"
+												aria-valuenow="20"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>JavaScript</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 60%"
+												aria-valuenow="60"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>JQuery</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 55%"
+												aria-valuenow="55"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>ReactJS</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 25%"
+												aria-valuenow="25"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>React Native</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 30%"
+												aria-valuenow="30"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>NodeJS</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 55%"
+												aria-valuenow="55"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>MySQL / SQLServer</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 55%"
+												aria-valuenow="55"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>MongoDB</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 35%"
+												aria-valuenow="35"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>Git</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 75%"
+												aria-valuenow="75"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>Linux OS</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 80%"
+												aria-valuenow="80"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<h4>Photoshop</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 45%"
+												aria-valuenow="45"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<h4>Docker</h4>
+										<div class="progress">
+											<div
+												class="progress-bar progress-bar-striped progress-bar-animated"
+												role="progressbar"
+												style="width: 50%"
+												aria-valuenow="50"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Specialized Skills -->
+					</div>
+					<!-- End Text Informations -->
 				</div>
+				<!-- End Main Content -->
 			</section>
-			<section></section>
 		</main>
-
-		<footer class="page-footer font-small bg-dark">
+		<!-- End Main -->
+		<!-- Start Footer -->
+		<footer class="page-footer font-small bg-dark" style="">
 			<div class="footer-copyright text-center py-3 text-light">
 				© 2020 Copyright -
 				<a
@@ -265,5 +709,6 @@
 				>
 			</div>
 		</footer>
+		<!-- End Footer -->
 	</body>
 </html>
