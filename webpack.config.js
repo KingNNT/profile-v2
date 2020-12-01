@@ -2,25 +2,22 @@
 	npm i node-sass postcss-loader@3.0.0 postcss-preset-env sass-loader css-loader cssnano mini-css-extract-plugin cross-env file-loader npm-watch webpack webpack-cli copy-webpack-plugin -D
 */
 
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const postcssPresetEnv = require('postcss-preset-env');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const postcssPresetEnv = require("postcss-preset-env");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const devMode = false;
 
 module.exports = {
-	mode: devMode ? 'development' : 'production',
-	entry: [
-		'./src/js/app.js',
-		'./src/scss/site.scss',
-	],
+	mode: devMode ? "development" : "production",
+	entry: ["./src/scss/site.scss"],
 
 	output: {
-		filename: 'app.min.js',
-		path: path.resolve(__dirname, 'dist'),
-		library: 'mylib',
-		libraryTarget: 'var',
+		filename: "app.min.js",
+		path: path.resolve(__dirname, "./assets/dist"),
+		library: "mylib",
+		libraryTarget: "var",
 	},
 
 	module: {
@@ -32,27 +29,27 @@ module.exports = {
 						loader: MiniCssExtractPlugin.loader,
 					},
 					{
-						loader: 'css-loader',
+						loader: "css-loader",
 						options: {
 							importLoaders: 2,
 						},
 					},
 					{
-						loader: 'postcss-loader',
+						loader: "postcss-loader",
 						options: {
-							ident: 'postcss',
+							ident: "postcss",
 							plugins: devMode
 								? () => []
 								: () => [
-									  postcssPresetEnv({
-										  browsers: ['>1%'],
-									  }),
-									  require('cssnano')(),
+										postcssPresetEnv({
+											browsers: [">1%"],
+										}),
+										require("cssnano")(),
 								  ],
 						},
 					},
 					{
-						loader: 'sass-loader',
+						loader: "sass-loader",
 					},
 				],
 			},
@@ -60,10 +57,10 @@ module.exports = {
 				test: /\.(png|jpe?g|gif)$/,
 				use: [
 					{
-						loader: 'file-loader',
+						loader: "file-loader",
 						options: {
-							name: '[name].[ext]',
-							publicPath: '../images',
+							name: "[name].[ext]",
+							publicPath: "../images",
 							emitFile: false,
 						},
 					},
@@ -74,13 +71,38 @@ module.exports = {
 
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: devMode ? 'css/site.css' : 'css/site.min.css',
+			filename: devMode ? "css/site.css" : "css/site.min.css",
 		}),
 		new CopyPlugin({
 			patterns: [
 				{
-					from: '',
-					to: '',
+					from: "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+					to: "libs/bootstrap/css",
+				},
+				{
+					from: "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+					to: "libs/bootstrap/js",
+				},
+				{
+					from: "./node_modules/jquery/dist/jquery.min.js",
+					to: "libs/jquery/jquery.min.js",
+				},
+				{
+					from: "./node_modules/jquery/dist/jquery.slim.min.js",
+					to: "libs/jquery/jquery.slim.min.js",
+				},
+				{
+					from: "./node_modules/@popperjs/core/dist/umd/popper.js",
+					to: "libs/popper/popper.js",
+				},
+				{
+					from: "./node_modules/font-awesome/fonts",
+					to: "libs/font-awesome",
+				},
+				{
+					from:
+						"./node_modules/font-awesome/css/font-awesome.min.css",
+					to: "libs/font-awesome/css",
 				},
 			],
 		}),
