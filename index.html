@@ -47,9 +47,9 @@
 
 		<script type="text/javascript" src="./assets/dist/app.min.js"></script>
 	</head>
-	<body>
+	<body class="">
 		<!-- Start Header -->
-		<header class="sticky-top">
+		<header class="position-fixed w-100" style="top: 0; z-index: 401">
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">
 					<img class="col-1 logo" src="./assets/images/Logo.png" />
@@ -102,7 +102,7 @@
 		<!-- End Header -->
 		<!-- Start Main -->
 		<main class="bg-light">
-			<section class="position-relative">
+			<section>
 				<!-- Start Top Image Background -->
 				<img
 					class="w-100 background__header position-absolute"
@@ -111,7 +111,7 @@
 				/>
 				<!-- End Top Image Background -->
 				<!-- Start Main Content -->
-				<div class="position-absolute" style="z-index: 1">
+				<div class="position-absolute" style="">
 					<!-- Start Box Informations -->
 					<div
 						id="box__information"
@@ -815,7 +815,7 @@
 		<!-- Start Footer -->
 		<footer
 			class="page-footer font-small bg-dark position-fixed w-100"
-			style="bottom: 0px; z-index: 1"
+			style="bottom: 0px; z-index: 401"
 		>
 			<div class="footer-copyright text-center py-3 text-light">
 				© 2020 Copyright -
