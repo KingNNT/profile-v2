@@ -58,3 +58,10 @@ main {
 
 footer {
 }
+
+@media (max-width: 360px) {
+	#box__information {
+		top: 0px !important;
+		left: 0px !important;
+	}
+}
