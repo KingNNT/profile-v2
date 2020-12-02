@@ -13,10 +13,9 @@ function changeBackgroundColorNavbar() {
 }
 function animationWhenOnTop() {
 	$(window).scroll(function () {
-		if ($(window).scrollTop() == 0) {
+		if ($(window).scrollTop() <= 50) {
 			$("#box__information").addClass("animate__bounce");
 		} else {
-			$("footer").show();
 			$("#box__information").removeClass("animate__bounce");
 		}
 	});
