@@ -104,6 +104,14 @@ module.exports = {
 						"./node_modules/font-awesome/css/font-awesome.min.css",
 					to: "libs/font-awesome/css",
 				},
+				{
+					from: "./node_modules/animate.css/animate.min.css",
+					to: "libs/animate",
+				},
+				{
+					from: "./node_modules/typed.js/lib/typed.min.js",
+					to: "libs/typedjs",
+				},
 			],
 		}),
 	],

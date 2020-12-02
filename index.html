@@ -25,6 +25,11 @@
 			type="text/css"
 			href="./assets/dist/libs/font-awesome/css/font-awesome.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./assets/dist/libs/animate/animate.min.css"
+		/>
 
 		<link
 			rel="stylesheet"
@@ -43,6 +48,10 @@
 		<script
 			type="text/javascript"
 			src="./assets/dist/libs/bootstrap/js/bootstrap.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="./assets/dist/libs/typedjs/typed.min.js"
 		></script>
 
 		<script type="text/javascript" src="./assets/dist/app.min.js"></script>
@@ -1030,27 +1039,44 @@
 							class="container-fluid w-100 mt-5 p-4 bg-light shadown-lg rounded"
 							id="page__bottom"
 						>
-							<div class="col-md-4 col-12">
-								<div class="row">
-									<a
-										class="text-decoration-none d-flex justify-content-center"
-										href="#"
-									>
-										<img
-											class="col-4 logo"
-											src="./assets/images/Logo.png"
-										/>
-									</a>
+							<div class="row">
+								<div class="col-md-4 col-12">
+									<div class="row">
+										<a
+											class="text-decoration-none d-flex justify-content-center"
+											href="#"
+										>
+											<img
+												class="col-4 logo"
+												src="./assets/images/Logo.png"
+											/>
+										</a>
+									</div>
 								</div>
-								<div
-									class="row d-flex justify-content-center mt-4"
-								>
-									<h5>Web Developer</h5>
+								<div class="col-md-8 col-12">
+									<div id="typed-strings">
+										<p>
+											Xin chào mọi người. Mình là
+											<strong>Ninh Ngọc Tuấn</strong>.
+										</p>
+										<p>
+											Mình là một <em>Web Developer</em>.
+										</p>
+									</div>
+									<span id="typed"></span>
 								</div>
 							</div>
-							<div class="col-md-8 col-12"></div>
-
-							<div></div>
+							<div
+								class="row page__bottom__title animate__animated animate__fast"
+							>
+								<div class="col-md-4 col-12">
+									<div
+										class="row d-flex justify-content-center mt-4"
+									>
+										<h5 class="" id="">Web Developer</h5>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- End Bottom Page -->
 					</div>
