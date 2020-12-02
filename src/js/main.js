@@ -11,7 +11,16 @@ function changeBackgroundColorNavbar() {
 		}
 	});
 }
-
+function animationWhenOnTop() {
+	$(window).scroll(function () {
+		if ($(window).scrollTop() == 0) {
+			$("#box__information").addClass("animate__bounce");
+		} else {
+			$("footer").show();
+			$("#box__information").removeClass("animate__bounce");
+		}
+	});
+}
 function animationPageBottom() {
 	$(window).scroll(function () {
 		if (
@@ -56,6 +65,7 @@ function buttonOnTop() {
 }
 /*  */
 $(document).ready(function () {
+	animationWhenOnTop();
 	changeBackgroundColorNavbar();
 	animationPageBottom();
 	buttonOnTop();
