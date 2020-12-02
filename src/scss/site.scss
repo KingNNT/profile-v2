@@ -91,10 +91,10 @@ header {
 		}
 		.nav-item {
 			.dropdown-menu {
-				background-color: $bg-color__main !important;
+				background-color: $bg-color__secondary !important;
 				.dropdown-item {
 					color: $text-color__main !important;
-					background-color: $bg-color__main !important;
+					background-color: $bg-color__secondary !important;
 					&:hover {
 						background-color: $bg-color__main__hover !important;
 					}
