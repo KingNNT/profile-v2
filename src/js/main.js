@@ -1,3 +1,20 @@
+/* Function Jquery */
+
+jQuery.fn.visible = function () {
+	return this.css("visibility", "visible");
+};
+
+jQuery.fn.invisible = function () {
+	return this.css("visibility", "hidden");
+};
+
+jQuery.fn.visibilityToggle = function () {
+	return this.css("visibility", function (i, visibility) {
+		return visibility == "visible" ? "hidden" : "visible";
+	});
+};
+/*  */
+
 function changeBackgroundColorNavbar() {
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
@@ -48,12 +65,14 @@ function animationPageBottom() {
 
 function buttonOnTop() {
 	let btn = $("#button__onTop");
-
+	btn.invisible();
 	$(window).scroll(function () {
-		if ($(window).scrollTop() > 300) {
-			btn.show();
-		} else {
+		if ($(window).scrollTop() < 300) {
 			btn.hide();
+			btn.invisible();
+		} else {
+			btn.show();
+			btn.visible();
 		}
 	});
 

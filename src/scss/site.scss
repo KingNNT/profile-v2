@@ -20,16 +20,9 @@ $text-color__main: #e0e0e0;
 /*  */
 $sizeBtn: 40px;
 #button__onTop {
-	display: inline-block;
 	background-color: #b5d5ff;
 	width: $sizeBtn;
 	height: $sizeBtn;
-	text-align: center;
-	border-radius: 4px;
-	margin: 30px;
-	position: fixed;
-	bottom: 3vh;
-	right: 0px;
 	transition: background-color 0.3s;
 	z-index: 1000;
 	&:hover {
